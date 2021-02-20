@@ -9,16 +9,17 @@ public class PlayerController : MonoBehaviour
     private float _cameraPitch = 0.0f;
     private CharacterController _cc;
 
+    [SerializeField] private MenuManager _menuManager;
+
     void Start()
     {
         //_cc = GetComponent<CharacterController>();
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
-        UpdatePlayerLook();
+        if (!_menuManager.IsMenuOpen)
+            UpdatePlayerLook();
     }
 
     private void UpdatePlayerLook()
