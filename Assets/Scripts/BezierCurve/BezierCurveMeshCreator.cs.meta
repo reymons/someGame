@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 10b67064189e9244aa1ace842cc37809
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _bezierCurve: {instanceID: 0}
+  - _meshToCreate: {fileID: 11400000, guid: 577911394dff34147a5f2ff0a958fe5a, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
