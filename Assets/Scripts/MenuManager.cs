@@ -107,6 +107,11 @@ public class MenuManager : MonoBehaviour
     {
         GameManager.ReloadGame();
     }
+
+    public void OnExit()
+    {
+        Application.Quit();
+    }
 }
 
 public class Menu

@@ -52,18 +52,21 @@
     <UnityVersion>2020.1.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\TargetSpawner.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\BezierCurve\BezierCurveMeshCreator.cs" />
     <Compile Include="Assets\Scripts\RoadMoveManagement.cs" />
     <Compile Include="Assets\Scripts\BezierCurve\BezierCurve.cs" />
-    <Compile Include="Assets\Scripts\BezierCurve\BezierCurvePointData.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\BezierCurve\Mesh2D.cs" />
     <Compile Include="Assets\Scripts\CrosshairTargetManager.cs" />
     <Compile Include="Assets\Scripts\CrosshairManager.cs" />
+    <Compile Include="Assets\Scripts\BezierCurve\BezierCurvePointData.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\BezierCurve\Mesh2D.cs" />
+    <Compile Include="Assets\Scripts\PlayerLightManager.cs" />
+    <Compile Include="Assets\Scripts\PillSpawner.cs" />
+    <Compile Include="Assets\Scripts\PillManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

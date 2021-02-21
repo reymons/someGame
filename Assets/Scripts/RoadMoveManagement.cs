@@ -12,7 +12,7 @@ public class RoadMoveManagement : MonoBehaviour
 
     [SerializeField] private BezierCurve _bezierCurve;
 
-    [SerializeField] private float _speed;
+    [SerializeField] public float Speed;
 
     public float T { get; private set; }
 
@@ -22,7 +22,7 @@ public class RoadMoveManagement : MonoBehaviour
     {
         BezierCurvePointData point = _bezierCurve.DefinePointData(T);
         _objToMove = MoveObjectToPos(_objToMove, point.Position);
-        _speed = _menuManager.Menu.Settings.MovementSpeed / 100000;
+        Speed = _menuManager.Menu.Settings.MovementSpeed / 100000 * 3;
         _isAutoMode = _menuManager.Menu.Settings.IsAutoMode;
     }
     
@@ -42,14 +42,14 @@ public class RoadMoveManagement : MonoBehaviour
                             _objToMove = MoveObjectToPos(_objToMove, point.Position);
                             _timer = 0;
                         }
-                        T += _speed;
+                        T += Speed;
                         _timer += Time.deltaTime;
                     }
                     else if (Input.GetKey(KeyCode.W))
                     {
                         BezierCurvePointData point = _bezierCurve.DefinePointData(T);
                         _objToMove = MoveObjectToPos(_objToMove, point.Position);
-                        T += _speed;
+                        T += Speed;
                     }
                 }
                 else
@@ -60,7 +60,7 @@ public class RoadMoveManagement : MonoBehaviour
         }
         else
         {
-            _speed = _menuManager.Menu.Settings.MovementSpeed / 100000;
+            Speed = _menuManager.Menu.Settings.MovementSpeed / 100000 * 3;
             _isAutoMode = _menuManager.Menu.Settings.IsAutoMode;
         }
     }
